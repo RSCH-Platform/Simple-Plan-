@@ -87,7 +87,8 @@ Simple Plan berada di antara sistem autentikasi pusat dan sistem inovasi digital
 | **Simple-Plan**  | Learning management Syistem                                            |                                                        |
 
 
-    Alur Helpdesk
+
+Alur Help Desk
 ┌──────────────────────────────┐
 │        UNIT / USER           │
 │ Melaporkan kendala TIK       │
@@ -355,7 +356,7 @@ Format yang dapat digunakan:
 
 ## Workflow Insiden
 
-Alur utama penanganan insiden:
+Alur Helpdesk Sarana Pasarana:
 
 
 
