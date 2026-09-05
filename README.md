@@ -90,9 +90,9 @@ Diagram sederhana:
 
 ```mermaid
 flowchart LR
-    IAM[NexaID / IAM] -->|SSO, User, Role, Unit Kerja| SPIKP[SP-IKP]
-    SPIKP -->|Data Insiden & Tindak Lanjut| SIIMUT[SIIMUT]
-    SIIMUT -->|Analisis Mutu & Monitoring| MANAJEMEN[Manajemen / Tim Mutu]
+    IAM[NexaID / IAM] -->|SSO, User, Role, Unit Kerja| SP Simple-Plan[SP-IKP]
+    SP Simple-Plan -->|Data ticketing & Tindak Lanjut| Simple-Plan[Simple-Plan]
+    Simple-Plam -->|Analisis laporan tiketing help desk,inventarisai & Monitoring| MANAJEMEN[Manajemen /Ka. Unit]
 ```
 
 ---
