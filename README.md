@@ -1,15 +1,15 @@
-# Simple-Plan - Sistem manajemen Inventarisisasi, Maintenance dan Help desk Perangkat Layanan
+# Simple-Plan - 
 
 ![SP-IKP](https://img.shields.io/badge/SP--IKP-Patient_Safety_Incident-blue)
 ![Workflow](https://img.shields.io/badge/Type-Workflow_Management-purple)
 ![Tech Stack](https://img.shields.io/badge/Stack-Laravel_%7C_Filament_%7C_MySQL-red)
 ![Authentication](https://img.shields.io/badge/Auth-NexaID_%2F_IAM-green)
 ![Ecosystem](https://img.shields.io/badge/Ecosystem-RSCH-darkgreen)
-**SP-IKP** adalah aplikasi manajemen pelaporan, investigasi, dan tindak lanjut **Insiden Keselamatan Pasien** berbasis workflow. Aplikasi ini dirancang untuk membantu rumah sakit mencatat kejadian insiden secara terstruktur, memproses laporan melalui tahapan verifikasi dan investigasi, serta memantau rekomendasi perbaikan sampai selesai.
+**SP-IKP** adalah aplikasi Sistem manajemen Inventarisisasi, Maintenance dan Help desk Perangkat Layanan manajemen pelaporan, **Simple-PLan** berbasis workflow. Aplikasi ini dirancang untuk membantu rumah sakit mencatat tiket Helpdesk, inventaris alat, dan helpdesk secara terstruktur, memproses laporan melalui tahapan verifikasi dan delegasi staf pelaksana TIK dan bagian sapras rumah sakit, serta memantau rekomendasi perbaikan sampai tiket selesai.
 
-SP-IKP merupakan bagian dari ekosistem digital **RSCH** bersama beberapa aplikasi lain seperti **SIIMUT** dan **NexaID / IAM**.
+Simple-Plan merupakan bagian dari ekosistem digital **RSCH** bersama beberapa aplikasi lain seperti **SIIMUT**, **IKP**,**RBV**, **LMS**, **smartpresence**.
 
-> SP-IKP bukan hanya aplikasi input laporan, tetapi sistem workflow untuk mengubah laporan insiden menjadi data tindak lanjut yang dapat digunakan dalam evaluasi mutu dan keselamatan pasien.
+> Simple-Plam bukan hanya aplikasi input kegitan helpdesk laporan, tetapi sistem workflow untuk mengubah laporan iventaris,helpdesk dan maintenance menjadi data tindak lanjut yang dapat digunakan dalam evaluasi KPI pekerjaan unit TIK dan umum RT.
 
 ---
 
@@ -37,23 +37,23 @@ SP-IKP merupakan bagian dari ekosistem digital **RSCH** bersama beberapa aplikas
 
 ## Latar Belakang
 
-Insiden keselamatan pasien membutuhkan proses pencatatan dan tindak lanjut yang rapi agar tidak berhenti sebagai laporan administratif saja. Setiap kejadian perlu memiliki alur yang jelas mulai dari pelaporan awal, verifikasi, investigasi, rekomendasi, hingga aksi perbaikan.
+Simple Plan membutuhkan proses pencatatan dan tindak lanjut yang rapi agar tidak berhenti sebagai laporan administratif saja. Setiap kegiatann perlu memiliki alur yang jelas mulai dari pelaporan awal, verifikasi, tiket terbit, rekomendasi, hingga aksi perbaikan.
 
 Tanpa sistem yang terstruktur, beberapa masalah umum dapat terjadi:
 
-* Laporan insiden tercecer atau tidak terdokumentasi dengan baik.
-* Status penanganan sulit dipantau.
+* Laporan helpdesk tidak terdokumentasi dengan baik.
+* Status penanganan sulit dipantau karena tidak ada tiket yang jelas.
 * Rekomendasi tidak memiliki tindak lanjut yang jelas.
-* Unit terkait tidak memiliki visibilitas terhadap progres kasus.
-* Data insiden sulit digunakan untuk evaluasi mutu jangka panjang.
+* Unit terkait tidak memiliki visibilitas terhadap progres perbaikan.
+* Data laporan sulit digunakan untuk evaluasi KPI kinerja unit.
 
-SP-IKP dibangun untuk menjawab kebutuhan tersebut melalui pendekatan **workflow management**, sehingga setiap laporan memiliki status, penanggung jawab, proses, dan riwayat yang dapat ditelusuri.
+Simple-Plan dibangun untuk menjawab kebutuhan tersebut melalui pendekatan **workflow management**, sehingga setiap laporan memiliki status, penanggung jawab, proses, dan riwayat yang dapat ditelusuri.
 
 ---
 
 ## Tujuan Sistem
 
-Tujuan utama SP-IKP adalah menyediakan sistem pelaporan insiden keselamatan pasien yang:
+Tujuan utama Simple Plan adalah menyediakan sistem pelaporan Help desk TIK,Help desk Sapras,maintenane pada layanan:
 
 1. **Terstruktur**
    Setiap laporan mengikuti tahapan proses yang jelas dan terdokumentasi.
