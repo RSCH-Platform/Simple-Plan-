@@ -86,9 +86,6 @@ Simple Plan berada di antara sistem autentikasi pusat dan sistem inovasi digital
 | **Smartpresensi**| Absensi kehadiran rapat                                                |                                                        |
 | **Simple-Plan**  | Learning management Syistem                                            |                                                        |
 
-Diagram sederhana:
-
-```mermaid
 
     Alur Helpdesk
 ┌──────────────────────────────┐
@@ -359,9 +356,6 @@ Format yang dapat digunakan:
 ## Workflow Insiden
 
 Alur utama penanganan insiden:
-
-```mermaid
-Alur Helpdesk
 
 
 
