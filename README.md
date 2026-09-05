@@ -361,19 +361,141 @@ Format yang dapat digunakan:
 Alur utama penanganan insiden:
 
 ```mermaid
-flowchart TD
-    A[Laporan Insiden Dibuat] --> B[Verifikasi Laporan]
-    B --> C{Laporan Valid?}
-    C -->|Tidak| D[Ditolak / Dikembalikan]
-    C -->|Ya| E[Penentuan Risiko]
-    E --> F[Investigasi]
-    F --> G[Rekomendasi Perbaikan]
-    G --> H[Tindak Lanjut]
-    H --> I{Aksi Selesai?}
-    I -->|Belum| J[Monitoring Ongoing]
-    J --> H
-    I -->|Ya| K[Completed]
-```
+Alur Helpdesk
+
+
+
+┌──────────────────────────────┐
+│        UNIT / USER           │
+│ Melaporkan kendala TIK       │
+│ • SIMRS                      │
+│ • Komputer / Laptop /HP      │
+│ • Printer                    │
+│ • Jaringan / WiFi /Telepon   │
+│ • Akun / Hak Akses           │
+│ • software dan hardware      │
+└───────────────┬──────────────┘
+                │
+                ▼
+┌────────────────────────────────────────────────────┐
+│       HELPDESK TIK                                 │
+│ Terima & buat TIKET                                │
+│ • Nomor Tiket                                      │
+│ • Unit                                             │
+│ • Kategori : Mutu                                  │ 
+│ a.Kepatuhan Input Operator                         │
+│ b.Ketidakstabilan System                           │
+│ c.Ketidaksesuain Program                           │
+│ d.Akun dan Hak Akses System                        │
+│ e.Waktu tanggap kerusakan Hardware                 │
+│  f.waktu tanggap kerusakan Software                │
+│ • Pilihan Tags IT :                                │
+│  a.Manage batal kunjungan pasien                   │
+│  b.Edit Asessmen Medis Dokter (Form Perubahan Data)│
+│  c.Support Apps Hapus Asessmen Medis Dokter        │
+│  d.Edit Asessmen Keperawatn (Form Perubahan Data)  │
+│  e.Support Apps Hapus Asessmen Keperawatan         │
+│  f.Edit data operasi dari modul Operasi            │
+│  g.Hapus Request, Regis dan ID Penjualan LAB       │
+│ h.Hapus Request, Regis dan ID Penjualan RAD        │
+│  i.Manage edit ID Penjualan LAB                    │
+│  j.Manage edit ID Penjualan RAD                    │
+│  k.Manage ACC dan Ticketing Unit                   │ 
+│  l.Hapus Request BMHP Farmasi                      │
+│  m.Manage Master Baru (Jasa, Rikjang, Fasilitas)   │
+│  n.Manage Mapping Master (Jasa, Rikjang, Fasilitas)│
+│  o.Manage Mapping untuk Bridging IT                │
+│  p.Manage Master LAB Test                          │
+│  q.Manage Master RAD Test                          │
+│  r.Manage Casemix tidak muncul                     │
+│  s.Manage unvalidasi RPP                           │
+│  t.Manage program Reham Medik Poli Fisioterapi     │
+│  u.Manage master Barang Medis Farmasi              │
+│  v.Manage tambah hak akses user NUHA               │
+│  w.Manage edit hak akses user NUHA                 │
+│  x.Manage hapus hak akses user NUHA                │
+│  y.Manage pelatihan modul ke Unit                  │
+│  z.Manage input Diagnostik Medis                   │
+│  aa.Manage input Tindakan Kunjungan di Modul vaksin│
+│  bb.Manage tambah master jam kerja + Mapping Unit  │
+│  cc.Manage transfer mutase saldo di kas V3         │
+│  dd.Manage master tenaga medis                     │
+│  ee.Manage mapping master ruangan operasi          │
+│  ff.Pergantian Sparpart                            │
+│  gg.Perbaikan perangkat                            │
+│ ff.Lain - lain                                     │
+│ • Waktu laporan                                    │
+└───────────────┬────────────────────────────────────┘
+                │
+                ▼
+        ┌─────────────────┐
+        │ KLASIFIKASI     │
+        │ & PRIORITAS     │
+        └────────┬────────┘
+                 │
+       ┌─────────┼──────────┐
+       ▼         ▼          ▼
+   KRITIS      SEDANG     RENDAH
+       │         │          │
+       └─────────┼──────────┘
+                 ▼
+┌──────────────────────────────┐
+│       PENUGASAN PIC          │
+│ • Tim Support                │
+│ • Tim Desain Grafis          │
+│ • Tim SIMRS / Aplikasi       │
+│                              │
+└───────────────┬──────────────┘
+                │
+                ▼
+┌──────────────────────────────┐
+│      ANALISIS & TROUBLESHOOT │
+│ • Remote support             │
+│ • Datang ke unit             │
+│ • Cek perangkat              │
+│ • Cek jaringan               │
+│ • Cek SIM RS       │
+└───────────────┬──────────────┘
+                │
+                ▼
+        ┌─────────────────┐
+        │ MASALAH SELESAI?│
+        └───────┬─────┬───┘
+                │     │
+              TIDAK   YA
+                │     │
+                ▼     ▼
+┌──────────────────┐  ┌────────────────────┐
+│ ESKALASI         │  │ VERIFIKASI USER    │
+│ • management     │  │ User memastikan    │
+│ • Vendor         │  │ layanan normal     │
+│ • Tim terkait    │  └─────────┬──────────┘
+└────────┬─────────┘            │
+         │                      ▼
+         └──────────────►┌──────────────────┐
+                         │ UPDATE TIKET     │
+                         │ • Tindakan       │
+                         │ • Penyebab       │
+                         │ • Waktu selesai  │
+                         │ • PIC            │
+                         └────────┬─────────┘
+                                  │
+                                  ▼
+                         ┌──────────────────┐
+                         │ TIKET DITUTUP    │
+                         └────────┬─────────┘
+                                  │
+                                  ▼
+                         ┌──────────────────┐
+                         │ MONITORING &     │
+                         │ LAPORAN HELPDESK │
+                         │ • SLA            │
+                         │ • Response Time  │
+                         │ • Resolution Time│
+                         │ • Rekap masalah  │
+                         └──────────────────┘
+
+
 
 Alur ini memastikan bahwa setiap laporan memiliki proses yang jelas dari awal sampai selesai.
 
