@@ -1,15 +1,15 @@
 # Simple-Plan - 
 
-![SP-IKP](https://img.shields.io/badge/SP--IKP-Patient_Safety_Incident-blue)
+![Simple-Plan](https://img.shields.io/badge/SP--IKP-Patient_Safety_Incident-blue)
 ![Workflow](https://img.shields.io/badge/Type-Workflow_Management-purple)
 ![Tech Stack](https://img.shields.io/badge/Stack-Laravel_%7C_Filament_%7C_MySQL-red)
 ![Authentication](https://img.shields.io/badge/Auth-NexaID_%2F_IAM-green)
 ![Ecosystem](https://img.shields.io/badge/Ecosystem-RSCH-darkgreen)
-**SP-IKP** adalah aplikasi Sistem manajemen Inventarisisasi, Maintenance dan Help desk Perangkat Layanan manajemen pelaporan, **Simple-PLan** berbasis workflow. Aplikasi ini dirancang untuk membantu rumah sakit mencatat tiket Helpdesk, inventaris alat, dan helpdesk secara terstruktur, memproses laporan melalui tahapan verifikasi dan delegasi staf pelaksana TIK dan bagian sapras rumah sakit, serta memantau rekomendasi perbaikan sampai tiket selesai.
+**Simple-Plan** adalah aplikasi Sistem manajemen Inventarisisasi, Maintenance dan Help desk Perangkat Layanan manajemen pelaporan, **Simple-PLan** berbasis workflow. Aplikasi ini dirancang untuk membantu rumah sakit mencatat tiket Helpdesk, inventaris alat, dan helpdesk secara terstruktur, memproses laporan melalui tahapan verifikasi dan delegasi staf pelaksana TIK dan bagian sapras rumah sakit, serta memantau rekomendasi perbaikan sampai tiket selesai.
 
 Simple-Plan merupakan bagian dari ekosistem digital **RSCH** bersama beberapa aplikasi lain seperti **SIIMUT**, **IKP**,**RBV**, **LMS**, **smartpresence**.
 
-> Simple-Plam bukan hanya aplikasi input kegitan helpdesk laporan, tetapi sistem workflow untuk mengubah laporan iventaris,helpdesk dan maintenance menjadi data tindak lanjut yang dapat digunakan dalam evaluasi KPI pekerjaan unit TIK dan umum RT.
+> Simple-Plan bukan hanya aplikasi input kegitan helpdesk laporan, tetapi sistem workflow untuk mengubah laporan iventaris,helpdesk dan maintenance menjadi data tindak lanjut yang dapat digunakan dalam evaluasi KPI pekerjaan unit TIK dan umum RT.
 
 ---
 
@@ -59,7 +59,7 @@ Tujuan utama Simple Plan adalah menyediakan sistem pelaporan Help desk TIK,Help 
    Setiap laporan mengikuti tahapan proses yang jelas dan terdokumentasi.
 
 2. **Traceable**
-   Riwayat perubahan status, verifikasi, investigasi, dan tindak lanjut dapat dilacak.
+   Riwayat perubahan status, verifikasi, tiketing, dan tindak lanjut dapat dilacak laporan.
 
 3. **Role-based**
    Akses pengguna disesuaikan berdasarkan role dan unit kerja.
@@ -67,20 +67,24 @@ Tujuan utama Simple Plan adalah menyediakan sistem pelaporan Help desk TIK,Help 
 4. **Terintegrasi**
    Menggunakan NexaID / IAM sebagai pusat autentikasi, role, dan unit kerja.
 
-5. **Mendukung Evaluasi Mutu**
-   Data insiden dapat menjadi konteks pendukung untuk analisis mutu di SIIMUT.
+5. **Mendukung Evaluasi pada laporan bulanan**
+   Data laporan dapat menjadi konteks pendukung untuk analisis mutu.
 
 ---
 
 ## Posisi dalam Ekosistem RSCH
 
-SP-IKP berada di antara sistem autentikasi pusat dan sistem mutu rumah sakit.
+Simple Plan berada di antara sistem autentikasi pusat dan sistem inovasi digital rumah sakit.
 
-| Aplikasi         | Fokus                                                                  | Peran terhadap SP-IKP                                  |
+| Aplikasi         | Fokus                                                                  | Peran terhadap Sistem                            |
 | ---------------- | ---------------------------------------------------------------------- | ------------------------------------------------------ |
 | **NexaID / IAM** | SSO, user, role, unit kerja, access profile                            | Menyediakan autentikasi dan otorisasi pengguna         |
 | **SP-IKP**       | Pelaporan insiden, verifikasi, investigasi, rekomendasi, tindak lanjut | Aplikasi utama pengelolaan insiden keselamatan pasien  |
 | **SIIMUT**       | Indikator mutu, monitoring, compliance, laporan mutu                   | Menerima konteks dari data insiden untuk evaluasi mutu |
+| **LMS**          | Learning management Syistem                                            |                                                        |
+| **RBV**          | Ruang Baca Virtual                                                     |                                                        |
+| **Smartpresensi**| Absensi kehadiran rapat                                                |                                                        |
+| **Simple-Plan**  | Learning management Syistem                                            |                                                        |
 
 Diagram sederhana:
 
