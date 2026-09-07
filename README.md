@@ -548,9 +548,9 @@ Gunakan checklist berikut setelah melakukan perubahan fitur atau deployment.
 * [ ] User tanpa role tidak dapat mengakses modul yang dibatasi.
 * [ ] Unit kerja user terbaca dengan benar.
 
-### Laporan Insiden
+### Laporan Tiketing TIK, Sapras
 
-* [ ] User dapat membuat laporan insiden.
+* [ ] User dapat membuat laporan helpdesk (TIK,Sapras).
 * [ ] Validasi form berjalan.
 * [ ] Data unit kerja tersimpan.
 * [ ] Lampiran dapat diunggah jika fitur tersedia.
@@ -672,10 +672,10 @@ Simple_plan dikembangkan dengan beberapa prinsip utama:
 
 Beberapa pengembangan yang dapat dilakukan ke depan:
 
-* [ ] Pemisahan Entity Antara Insiden dan Investigasi.
-* [ ] Reminder tindak lanjut otomatis.
-* [ ] Notifikasi email atau WhatsApp internal (Telegram).
-* [ ] Export laporan KPRS.
+* [ ] Pemisahan Entity Antara Help desk,Permintaan Desain Grafis, dan Maintenance.
+* [ ] Reminder tindak lanjut.
+* [ ] Notifikasi email atau WhatsApp internal (Telegram) bila memungkinkan.
+* [ ] Export laporan.
 * [ ] Integrasi insight ke Sistem lainya.
 * [ ] API internal untuk rekap data.
 * [ ] SLA monitoring untuk tindak lanjut.
@@ -701,7 +701,7 @@ Beberapa hal yang perlu diperhatikan saat mengembangkan fitur baru:
 ## License
 
 Aplikasi ini dikembangkan untuk kebutuhan internal ekosistem RSCH.
-
+dalam hal ini simple plan masih V1
 Penggunaan, distribusi, dan modifikasi mengikuti kebijakan internal pemilik sistem.
 
 ---
