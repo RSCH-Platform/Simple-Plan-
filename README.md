@@ -501,7 +501,7 @@ sequenceDiagram
     SPIKP->>IAM: Redirect ke login SSO
     IAM->>User: Form login
     User->>IAM: Login menggunakan kredensial
-    IAM->>SPIKP: Callback dengan token
+    IAM->>SPSimpleplan: Callback dengan token
     SPIKP->>IAM: Verifikasi token
     IAM->>SPSimpleplan: Data user, role, unit kerja
     SPSimpleplan->>User: Masuk dashboard
