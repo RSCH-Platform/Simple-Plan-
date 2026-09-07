@@ -503,8 +503,8 @@ sequenceDiagram
     User->>IAM: Login menggunakan kredensial
     IAM->>SPIKP: Callback dengan token
     SPIKP->>IAM: Verifikasi token
-    IAM->>SPIKP: Data user, role, unit kerja
-    SPIKP->>User: Masuk dashboard
+    IAM->>SPSimpleplan: Data user, role, unit kerja
+    SPSimpleplan->>User: Masuk dashboard
 ```
 
 ---
