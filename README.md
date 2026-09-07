@@ -497,12 +497,12 @@ sequenceDiagram
     participant Simple plan
     participant IAM as NexaID / IAM
 
-    User->>SPIKP: Akses aplikasi
-    SPIKP->>IAM: Redirect ke login SSO
+    User->>SPSimplePlan: Akses aplikasi
+    SPSimplePlan->>IAM: Redirect ke login SSO
     IAM->>User: Form login
     User->>IAM: Login menggunakan kredensial
     IAM->>SPSimpleplan: Callback dengan token
-    SPIKP->>IAM: Verifikasi token
+    SPSimplePlan->>IAM: Verifikasi token
     IAM->>SPSimpleplan: Data user, role, unit kerja
     SPSimpleplan->>User: Masuk dashboard
 ```
